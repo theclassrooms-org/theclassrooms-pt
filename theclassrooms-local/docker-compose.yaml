@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  theclassrooms_db:
+    image: postgres:16
+    container_name: theclassrooms_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: theclassrooms_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - theclassrooms_db:/var/lib/postgresql/data
+
+volumes:
+  theclassrooms_db:
