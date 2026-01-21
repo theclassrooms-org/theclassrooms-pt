@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: theclassrooms_db
     ports:
-      - "5432:5432"
+      - "5440:5432"
     volumes:
       - theclassrooms_db:/var/lib/postgresql/data
 
